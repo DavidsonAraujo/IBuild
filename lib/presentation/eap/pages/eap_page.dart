@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/providers/auth_provider.dart';
+import '../../../data/models/contexto_usuario.dart';
 import '../../../core/theme/app_theme.dart';
 
 part 'eap_page.g.dart';
@@ -165,7 +166,7 @@ class _EAPItemCardState extends ConsumerState<_EAPItemCard> {
       // Item principal
       InkWell(
         borderRadius: BorderRadius.circular(10),
-        onTap: () => _abrirAvanço(context, item),
+        onTap: () => _abrirAvanco(context, item),
         onLongPress: () => setState(() => _expandido = !_expandido),
         child: Container(
           margin: EdgeInsets.only(left: indent, bottom: 6),
@@ -173,10 +174,12 @@ class _EAPItemCardState extends ConsumerState<_EAPItemCard> {
           decoration: BoxDecoration(
             color: IBuildColors.white,
             borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: IBuildColors.gray100),
-            // Destaque por nível
-            borderLeft: BorderSide(
-              color: _corNivel(item.nivel), width: 3),
+            border: Border(
+              left: BorderSide(color: _corNivel(item.nivel), width: 3),
+              top: const BorderSide(color: IBuildColors.gray100),
+              right: const BorderSide(color: IBuildColors.gray100),
+              bottom: const BorderSide(color: IBuildColors.gray100),
+            ),
           ),
           child: Row(children: [
             Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -231,7 +234,7 @@ class _EAPItemCardState extends ConsumerState<_EAPItemCard> {
     _ => IBuildColors.gray500,
   };
 
-  void _abrirAvanço(BuildContext ctx, _EAPItem item) => showModalBottomSheet(
+  void _abrirAvanco(BuildContext ctx, _EAPItem item) => showModalBottomSheet(
     context: ctx,
     isScrollControlled: true,
     shape: const RoundedRectangleBorder(

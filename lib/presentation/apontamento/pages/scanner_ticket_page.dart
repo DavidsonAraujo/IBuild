@@ -74,12 +74,12 @@ class _ScannerTicketPageState extends ConsumerState<ScannerTicketPage> {
         actions: [
           IconButton(
             icon: ValueListenableBuilder(
-              valueListenable: _ctrl.torchState,
-              builder: (_, state, __) => Icon(
-                state == TorchState.on
+              valueListenable: _ctrl,
+              builder: (_, s, __) => Icon(
+                s.torchState == TorchState.on
                     ? Icons.flash_on
                     : Icons.flash_off,
-                color: state == TorchState.on
+                color: s.torchState == TorchState.on
                     ? IBuildColors.warning
                     : IBuildColors.white,
               ),

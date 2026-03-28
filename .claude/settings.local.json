@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where flutter:*)",
+      "Read(//c/flutter/**)",
+      "Read(//c/Users/Davidson/flutter/**)",
+      "Bash(find /c -name flutter -maxdepth 5)",
+      "Bash(cmd.exe /c \"flutter run -d chrome\")",
+      "Bash(cmd.exe /c \"where flutter 2>&1 && echo PATH=%PATH%\")",
+      "Bash(cmd.exe /c \"where flutter\")",
+      "Bash(cmd.exe /c \"echo %PATH%\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\'' -Recurse -Filter ''flutter.bat'' -ErrorAction SilentlyContinue -Depth 4 | Select-Object -First 5 FullName\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\src'',''C:\\\\tools'',''C:\\\\flutter'',''C:\\\\dev'',''C:\\\\Users\\\\Davidson\\\\flutter'',''C:\\\\Users\\\\Davidson\\\\AppData\\\\Local\\\\flutter'' -ErrorAction SilentlyContinue | Select-Object FullName\")",
+      "Bash(powershell.exe -Command \"Test-Path ''C:\\\\flutter''; Test-Path ''C:\\\\src\\\\flutter''; Test-Path ''C:\\\\tools\\\\flutter''; $env:PATH\")",
+      "Bash(powershell.exe -Command \"echo $env:PATH\")"
+    ]
+  }
+}

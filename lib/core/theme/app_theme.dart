@@ -143,7 +143,7 @@ class IBuildTheme {
   );
 
   // ── Cards ───────────────────────────────────
-  static CardTheme _cardTheme({bool dark = false}) => CardTheme(
+  static CardThemeData _cardTheme({bool dark = false}) => CardThemeData(
     color: dark ? IBuildColors.fieldCard : IBuildColors.white,
     elevation: 0,
     shape: RoundedRectangleBorder(

@@ -5,6 +5,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/network/router.dart';
 import '../../../core/providers/auth_provider.dart';
+import '../../../data/models/contexto_usuario.dart';
 import '../../../core/theme/app_theme.dart';
 
 part 'home_page.g.dart';

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/providers/auth_provider.dart';
+import '../../../data/models/contexto_usuario.dart';
 import '../../../core/theme/app_theme.dart';
 import '../widgets/item_detalhe_sheet.dart';
 import '../widgets/filtros_construcao_sheet.dart';

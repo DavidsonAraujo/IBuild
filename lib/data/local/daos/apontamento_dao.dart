@@ -1,6 +1,8 @@
 import 'package:drift/drift.dart';
 import '../database/local_database.dart';
 
+part 'apontamento_dao.g.dart';
+
 // ── DAO de Apontamentos ──────────────────────────
 @DriftAccessor(tables: [ApontamentosLocal, FilaSync])
 class ApontamentoDao extends DatabaseAccessor<LocalDatabase>

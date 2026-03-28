@@ -41,7 +41,7 @@ class _ApontamentoPageState extends ConsumerState<ApontamentoPage>
 
   @override
   Widget build(BuildContext context) {
-    final apontamentos = ref.watch(apontamentosProvider);
+    final apontamentos = ref.watch(apontamentosNotifierProvider);
 
     return Scaffold(
       backgroundColor: IBuildColors.gray100,
@@ -98,13 +98,13 @@ class _ApontamentoPageState extends ConsumerState<ApontamentoPage>
                         icon: const Icon(Icons.clear, size: 18),
                         onPressed: () {
                           _buscaCtrl.clear();
-                          ref.read(apontamentosProvider.notifier).filtrar('');
+                          ref.read(apontamentosNotifierProvider.notifier).filtrar('');
                         },
                       )
                     : null,
               ),
               onChanged: (v) =>
-                  ref.read(apontamentosProvider.notifier).filtrar(v),
+                  ref.read(apontamentosNotifierProvider.notifier).filtrar(v),
             ),
           ),
 

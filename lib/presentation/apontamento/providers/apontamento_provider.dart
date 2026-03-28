@@ -5,6 +5,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:uuid/uuid.dart';
 
 import '../../../core/providers/auth_provider.dart';
+import '../../../data/models/contexto_usuario.dart';
 
 part 'apontamento_provider.g.dart';
 

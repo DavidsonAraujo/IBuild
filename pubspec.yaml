@@ -24,29 +24,29 @@ dependencies:
   path: ^1.9.0
 
   # ── Navegação ────────────────────────────────────────────────
-  go_router: ^14.1.4                # Roteamento declarativo
+  go_router: ^17.1.0                # Roteamento declarativo
 
   # ── UI / UX ──────────────────────────────────────────────────
-  google_fonts: ^6.2.1              # Tipografia
+  google_fonts: ^8.0.2              # Tipografia
   flutter_svg: ^2.0.10+1            # Ícones e logos SVG
   cached_network_image: ^3.3.1      # Cache de imagens
   shimmer: ^3.0.0                   # Loading skeleton
   lottie: ^3.1.2                    # Animações Lottie
-  fl_chart: ^0.68.0                 # Gráficos (EAP, dashboard)
+  fl_chart: ^1.2.0                 # Gráficos (EAP, dashboard)
   data_table_2: ^2.5.13             # Tabelas avançadas (web/tablet)
 
   # ── Formulários e Inputs ────────────────────────────────────
-  flutter_form_builder: ^9.3.0      # Formulários complexos
-  form_builder_validators: ^10.0.1  # Validadores
+  flutter_form_builder: ^10.3.0+2      # Formulários complexos
+  form_builder_validators: ^11.3.0  # Validadores
   mask_text_input_formatter: ^2.9.0 # Máscaras de input
 
   # ── Câmera / QR Code ────────────────────────────────────────
-  mobile_scanner: ^5.2.2            # Scanner QR Code (tickets)
+  mobile_scanner: ^7.2.0            # Scanner QR Code (tickets)
   image_picker: ^1.1.2              # Seleção de imagens
 
   # ── Arquivos / Exportação ───────────────────────────────────
-  file_picker: ^8.0.6               # Seleção de arquivos (importação XLS)
-  share_plus: ^9.0.0                # Compartilhar arquivos
+  file_picker: ^10.3.10               # Seleção de arquivos (importação XLS)
+  share_plus: ^12.0.1                # Compartilhar arquivos
   open_filex: ^4.5.1                # Abrir arquivos
 
   # ── PDF ──────────────────────────────────────────────────────
@@ -54,27 +54,27 @@ dependencies:
   printing: ^5.13.1                 # Preview e impressão de PDF
 
   # ── Conectividade / Sync ────────────────────────────────────
-  connectivity_plus: ^6.0.3         # Status de rede
+  connectivity_plus: ^7.0.0         # Status de rede
   internet_connection_checker_plus: ^2.5.0
 
   # ── Storage Local ───────────────────────────────────────────
   shared_preferences: ^2.3.1        # Preferências simples
-  flutter_secure_storage: ^9.2.2    # Tokens e dados sensíveis
+  flutter_secure_storage: ^10.0.0    # Tokens e dados sensíveis
 
   # ── Utilitários ──────────────────────────────────────────────
-  intl: ^0.19.0                     # Internacionalização e datas
+  intl: any                         # Internacionalização e datas
   uuid: ^4.4.2                      # Geração de UUIDs (offline)
   equatable: ^2.0.5                 # Comparação de objetos
   freezed_annotation: ^2.4.4        # Imutabilidade de modelos
   json_annotation: ^4.9.0           # Serialização JSON
   collection: ^1.18.0               # Utilitários de coleções
   logger: ^2.4.0                    # Logging estruturado
-  package_info_plus: ^8.0.2         # Versão do app
+  package_info_plus: ^9.0.0         # Versão do app
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: ^6.0.0
 
   # Geração de código
   build_runner: ^2.4.11
@@ -90,11 +90,11 @@ flutter:
     - assets/images/
     - assets/icons/
 
-  fonts:
-    - family: IBuildSans
-      fonts:
-        - asset: assets/fonts/IBuildSans-Regular.ttf
-        - asset: assets/fonts/IBuildSans-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/IBuildSans-Bold.ttf
-          weight: 700
+  # fonts:
+  #   - family: IBuildSans
+  #     fonts:
+  #       - asset: assets/fonts/IBuildSans-Regular.ttf
+  #       - asset: assets/fonts/IBuildSans-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/IBuildSans-Bold.ttf
+  #         weight: 700

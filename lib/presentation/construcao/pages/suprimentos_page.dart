@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../core/providers/auth_provider.dart';
+import '../../../data/models/contexto_usuario.dart';
 import '../../../core/theme/app_theme.dart';
 
 part 'suprimentos_page.g.dart';
